@@ -1,5 +1,7 @@
 package lista_1.ex1;
-
+//Summary:
+//Classes responsável pelos atributos e métodos de um objeto do tipo Pessoa
+//TODO: Reimplementar a classe Pessoa utilizando Records
 public class Pessoa {
     private String nome;
     private String sexo;
