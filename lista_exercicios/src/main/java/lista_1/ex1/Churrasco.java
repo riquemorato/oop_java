@@ -22,15 +22,15 @@ public class Churrasco {
     //Métodos
     public void verificarConsumo(Pessoa pessoa) {
 
-        if(pessoa.isVegetariana() || pessoa.getIdade() <= 3) {
+        if(pessoa.vegetariana() || pessoa.idade() <= 3) {
             this.qtdCarne = 0;
             System.out.println("Isento do consumo de carne. \n");
             return;
         }
-        else if (pessoa.getIdade() >= 4 || pessoa.getIdade() <= 12) {
+        else if (pessoa.idade() >= 4 || pessoa.idade() <= 12) {
             this.qtdCarne = 1;
         }
-        else if(pessoa.getIdade() > 12) {
+        else if(pessoa.idade() > 12) {
             this.qtdCarne = 2;
         }
 
